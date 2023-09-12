@@ -11,9 +11,9 @@ class UserTest extends TestCase
     /**
      * A basic feature test example.
      */
-    public function test_example(): void
+    public function test_login_form(): void
     {
-        $response = $this->get('/test');
+        $response = $this->get('/login');
 
         $response->assertStatus(200);
     }
