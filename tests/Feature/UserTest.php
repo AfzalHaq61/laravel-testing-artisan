@@ -72,4 +72,10 @@ class UserTest extends TestCase
             'name' => 'Test User Khan'
         ]);
     }
+
+    public function test_if_seeders_works() {
+        $response = $this->seed();
+
+        $response->assertTrue(true);
+    }
 }
