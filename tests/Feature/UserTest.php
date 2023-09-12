@@ -62,4 +62,14 @@ class UserTest extends TestCase
         $response->assertRedirect(RouteServiceProvider::HOME);
 
     }
+
+    public function test_database() {
+        // $this->assertDatabaseHas('users', [
+        //     'name' => 'Test User'
+        // ]);
+
+        $this->assertDatabaseMissing('users', [
+            'name' => 'Test User Khan'
+        ]);
+    }
 }
